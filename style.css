@@ -1,7 +1,7 @@
 
 body{
   margin: 0;
-  background-image: url(pic/img-1.jpg);
+  background-image: url(img-1.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -64,7 +64,7 @@ body{
 }
 .main-body-text{
   padding: 20px;
-  background-image: url(pic/main-background.jpg);
+  background-image: url(main-background.jpg);
   border: none;
   background-position: center;
   background-size: cover;
@@ -90,7 +90,7 @@ body{
   margin-top: 50px;
 }
 .about-me-section{
-  background-image: url(pic/main-background-06.jpg);
+  background-image: url(main-background-06.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -130,7 +130,7 @@ body{
   line-height: 1.5;
 }
 .quote-section{
-  background-image: url(pic/main-background-04.png);
+  background-image: url(main-background-04.png);
   background-position: center;
   background-size: cover;
   height: 30vh;
@@ -144,7 +144,7 @@ body{
   
 }
 .education-section{
-  background-image: url(pic/main-background-03.png);
+  background-image: url(main-background-03.png);
   background-position: center;
   background-size: cover;
   height: 80vh;
@@ -188,7 +188,7 @@ body{
 }
 
 .footer{
-  background-image: url(pic/main-background-03.png);
+  background-image: url(main-background-03.png);
   background-position: center;
   background-size: cover;
   height: 10vh;
