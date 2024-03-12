@@ -268,22 +268,4 @@ body{
   .name-text-description{
     font-size:16px;
   }
-  .main-body-text {
-    height: auto;
-  }
-  .main-body-text h3 {
-    font-size: 16px;
-  }
-  .main-body-text h4 {
-    font-size: 14px;
-  }
-  .about-me-section {
-    height: auto;
-  }
-  .about-me-details p {
-    font-size: 16px;
-  }
-  .quote-section {
-    font-size: 16px;
-  }
 }
