@@ -1,0 +1,287 @@
+
+body{
+  margin: 0;
+  background-image: url(pic/img-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  display: flex;
+  font-family:Roboto;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  transition:color 0.3s ease;
+  text-align: center;
+  padding: 15px 12px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  color:#0088a9;
+}
+
+.topnav a.active {
+  color:#0088a9;
+}
+
+.topnav .icon {
+  display: none;
+}
+.nav-left{
+  width: 220px;
+  align-items: center;   
+  gap: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display:grid;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.main-body-text{
+  padding: 20px;
+  background-image: url(pic/main-background.jpg);
+  border: none;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  line-height: 1;
+}
+.name-text {
+  margin-top: 120px;
+  font-size: 35px;
+  font-family: Roboto;
+  line-height: 0.01;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color:white;
+  font-weight: bold;
+}
+.main-body-text p{
+  margin-top: 50px;
+}
+.about-me-section{
+  background-image: url(pic/main-background-06.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  padding: 30px;
+  padding-left: 8%;
+  height: 65vh;
+  position: relative;
+}
+.about-me-details-section{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 0.4fr;
+  padding-right: 90px;
+  padding-left: 30px;
+  
+}
+
+.about-me-pic{
+  padding: 10px;
+}
+.about-me-pic img{
+  padding-top: 20px;
+  height: 280px;
+  border-radius: 5px;
+}
+.about-me-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-top: 0px;
+}
+.about-me-details p{
+  font-size: 20px;
+  line-height: 1.5;
+}
+.quote-section{
+  background-image: url(pic/main-background-04.png);
+  background-position: center;
+  background-size: cover;
+  height: 30vh;
+  font-family: "Protest Riot", sans-serif;
+  font-size: 24px;
+  line-height: 1.8;
+  font-weight: lighter;
+  font-style: normal;
+  text-align: center;
+  padding: 30px 20px;
+  
+}
+.education-section{
+  background-image: url(pic/main-background-03.png);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  padding: 10px;
+}
+.education-section-title{
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.education-section-details{
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight:500;
+  padding-left: 10%;
+  line-height: 1.6;
+}
+
+.project-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 248, 240);
+  padding-bottom: 40PX;
+}
+.project-section-img{
+  width: 350px;
+}
+.project-section-text{
+  font-size: 25px;
+  color: black;
+  text-align: center;
+}
+.project{
+  display: grid;
+  grid-template-rows: 0.8fr 1.8fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer{
+  background-image: url(pic/main-background-03.png);
+  background-position: center;
+  background-size: cover;
+  height: 10vh;
+  font-size: 22px;
+  text-align: center;
+  padding: 5px 10px;
+}
+/* Add this CSS at the end of your existing CSS */
+
+/* For tablets and smaller devices */
+@media only screen and (max-width: 850px) {
+  
+  .main-body-text {
+    padding: 10px;
+  }
+  .name-text {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+  .main-body-text p {
+    margin-top: 30px;
+  }
+  .about-me-section {
+    height: auto;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+  .about-me-pic{
+    display: grid;
+    justify-items: center;
+  }
+  .about-me-pic img {
+    height: auto;
+    max-width: 50%;
+    min-width: 250px;
+  }
+  .about-me-details {
+    padding-right: 20px;
+  }
+  .about-me-footer {
+    padding-top: 5%;
+  }
+  .quote-section {
+    margin-top:auto;
+    font-size: 18px;
+  }
+  .education-section{
+    height: auto;
+  }
+  .education-section-title{
+    font-size: 26px;
+  }
+  .education-section-details{
+    font-size: 20px;
+  }
+  
+  .project-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .project-section-img{
+    width: 300px;
+  }
+}
+
+/* For smaller devices like smartphones 
+@media only screen and (max-width: 480px) {
+  
+  .nav-all-class ul li a {
+    font-size: 16px;
+  }
+  .name-text {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+  .main-body-text {
+    height: auto;
+  }
+  .main-body-text h3 {
+    font-size: 16px;
+  }
+  .main-body-text h4 {
+    font-size: 14px;
+  }
+  .about-me-section {
+    height: auto;
+  }
+  .about-me-details p {
+    font-size: 16px;
+  }
+  .quote-section {
+    font-size: 16px;
+  }
+}
+*/
