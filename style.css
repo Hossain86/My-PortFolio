@@ -255,7 +255,7 @@ body{
   }
 }
 
-/* For smaller devices like smartphones 
+/* For smaller devices like smartphones */
 @media only screen and (max-width: 480px) {
   
   .nav-all-class ul li a {
@@ -263,7 +263,10 @@ body{
   }
   .name-text {
     margin-top: 30px;
-    font-size: 24px;
+    font-size: 20px;
+  }
+  .name-text-description{
+    font-size:16px;
   }
   .main-body-text {
     height: auto;
@@ -284,4 +287,3 @@ body{
     font-size: 16px;
   }
 }
-*/
